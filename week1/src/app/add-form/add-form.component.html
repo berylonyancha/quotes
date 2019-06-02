@@ -1,6 +1,6 @@
 <div class="container">
   <h1>Add New Quote</h1>
-  <form (ngSubmit)='submitQuote()' #addForm="ngForm">
+  <form (ngSubmit)='submitQuote()' #addForm='ngForm'>
     <div class="form-group">
       <label for="description">Quote</label><br>
       <textarea class="form-control" id="description" cols="20" rows="4" [(ngModel)]="newQuote.description" name="description" #description="ngModel" required></textarea>
@@ -16,6 +16,12 @@
       <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
         <p>Author's name is required</p>
       </div>
+
+    </div>
+
+    <div class="form-group">
+      <label for="publish">Date Published</label><br>
+      <input type="date" id="publish"[(ngModel)]="newQuote.publishDate" name="publishDate" #publishDate="ngModel" required>
 
     </div>
 
