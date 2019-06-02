@@ -16,6 +16,13 @@ export class QuoteComponent implements OnInit {
     new Quote(3, "Its never that and if it is si ni life basi", "Beryl Onyancha")
 
   ]
+  addNewQuote(quote){
+    let quoteLength = this.quotes.length;
+    quote.id=quoteLength+1;
+    this.quotes.push(quote)
+
+}
+
   constructor() { }
 
   ngOnInit() {
