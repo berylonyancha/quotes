@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import{Quote} from '../quote'
+import{Quote} from '../quotes'
 
 @Component({
   selector: 'app-quote',
@@ -9,9 +9,9 @@ import{Quote} from '../quote'
 export class QuoteComponent implements OnInit {
 
   quotes = [
-    new Quote(1, "Your grief path is yours alone, and no one else can walk it, and no one else can understand it", "Terri Irwin")
+    new Quote(1, "Your grief path is yours alone, and no one else can walk it, and no one else can understand it", "Terri Irwin"),
 
-    new Quote(2, "When you want to take control of your life and make the most of everything around you", "Ed Lester")
+    new Quote(2, "When you want to take control of your life and make the most of everything around you", "Ed Lester"),
 
     new Quote(3, "Its never that and if it is si ni life basi", "Beryl Onyancha")
 
