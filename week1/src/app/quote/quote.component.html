@@ -1,13 +1,21 @@
-<h1>Quotes</h1>
-<hr>
-
-<ul>
-    <div *ngFor='let quote of quotes'>
-        <li >{{quote.description}}<br>
-          {{quote.name}}
-        </li>
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="head">Quotes</h1>
+        <p class="mantra">Feel inspired</p>
     </div>
-</ul>
+</div>
+
+<div class="card" *ngFor='let quote of quotes'>
+    <div class="card-body">
+        <h4 class="card-title">{{quote.name}}</h4>
+        <h6 class="card-subtitle mb-2 text-muted">{{quote.publisher}}</h6>
+        <p class="card-text">{{quote.description}}</p>
+        <p>Time Elapsed:{{quote.publishDate|dateCount}}</p>
+        
+
+    </div>
+</div>
+      
 
  <div class="container">
     <div class="row">
