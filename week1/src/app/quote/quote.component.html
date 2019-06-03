@@ -11,7 +11,8 @@
         <h6 class="card-subtitle mb-2 text-muted">{{quote.publisher}}</h6>
         <p class="card-text">{{quote.description}}</p>
         <p>Time Elapsed:{{quote.publishDate|dateCount}}</p>
-        
+        <button (click)='upVote' class="btn btn-success">Yaay :) {{upvote}}</button>
+        <button (click)='downVote' class="btn btn-warning">Booo :( {{downvote}}</button>
 
     </div>
 </div>
