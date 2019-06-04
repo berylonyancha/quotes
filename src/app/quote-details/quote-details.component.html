@@ -1,3 +1,15 @@
-<p>
-  <button class="btn btn-danger" (click) = 'goalDelete(true)'>Delete Goal</button>
-</p>
+<div class="body">
+  <p>
+  {{quote.description}}
+  </p>
+  <p>Time Elapsed:{{quote.publishDate|dateCount}}</p>
+  <p>
+    Likes: {{quote.upvotes}}
+  </p>
+
+  <p>
+    Dislikes: {{quote.downvotes}}
+  </p>
+  
+  <button class="btn btn-danger" (click) = 'quoteDelete(true)'>Delete</button>
+</div>
