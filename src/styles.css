@@ -1,0 +1,31 @@
+.jumbotron {
+  border: 2px solid #113f67;
+  margin-top: 40px;
+  background-color: white;
+}
+
+.card-body{
+  border: 2px solid #113f67;
+  margin: 20px;
+}
+
+button{
+  margin: 10px;
+}
+.head{
+  text-align: center;
+  color:black;
+  font-family: 'Satisfy', cursive;
+  font-size: 100px;
+}
+.mantra {
+  text-align: center;
+  color: black;
+  font-family: 'Satisfy', cursive;
+  font-size: 30px;
+}
+
+h1,h4{
+  font-family: 'Permanent Marker', cursive;
+}
+
